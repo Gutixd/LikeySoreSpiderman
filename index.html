@@ -521,6 +521,49 @@
             transform: rotate(45deg);
         }
         
+        /* === ESTILOS WHATSAPP === */
+        .whatsapp-link {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-link:hover {
+            background-color: #128C7E;
+            transform: scale(1.05);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             .header-content {
@@ -549,23 +592,15 @@
             .section-title h2 {
                 font-size: 2.2rem;
             }
-
-            .whatsapp-link {
-    display: inline-block;
-    background-color: #25D366;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 10px 0;
-    transition: all 0.3s;
-}
-
-.whatsapp-link:hover {
-    background-color: #128C7E;
-    transform: scale(1.05);
-}
+            
+            /* Responsive para WhatsApp */
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 30px;
+                right: 30px;
+                font-size: 24px;
+            }
         }
     </style>
 </head>
@@ -642,7 +677,7 @@
                     <div class="product-info">
                         <h3 class="product-title">Disfraz</h3>
                         <p class="product-character">IOBY BLACK VENOM</p>
-                        <p class="product-price">$25.000 <span>$20.000</span></p>
+                        <p class="product-price">$25.000 <span>$30.000</span></p>
                         <a href="https://www.instagram.com/likey_store_/" class="btn">Consultar</a>
                     </div>
                 </div>
@@ -650,98 +685,96 @@
         </div>
     </section>
 
-<!-- Envío -->
-<section class="shipping">
-    <div class="container">
-        <div class="shipping-content">
-            <div class="shipping-icon">
-                <i class="fas fa-shipping-fast"></i>
+    <!-- Envío -->
+    <section class="shipping">
+        <div class="container">
+            <div class="shipping-content">
+                <div class="shipping-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h2>Envíos a todo Chile</h2>
+                <p>Realizamos envíos a través de Starken a todas las regiones del país.</p>
+                <p>El tiempo de entrega estimado es de 2 a 5 días hábiles.</p>
+                <p>El costo de envío dependerá de la ubicación y se calculará al momento de realizar tu pedido.</p>
             </div>
-            <h2>Envíos a todo Chile</h2>
-            <p>Realizamos envíos a través de Starken a todas las regiones del país.</p>
-            <p>El tiempo de entrega estimado es de 2 a 5 días hábiles.</p>
-            <p>El costo de envío dependerá de la ubicación y se calculará al momento de realizar tu pedido.</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contacto -->
-<section class="contact" id="contacto">
-    <div class="container">
-        <div class="section-title">
-            <h2>Contacto</h2>
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Teléfono</h3>
+                    <p class="contact-info">+56 9 7882 9942</p>
+                    <p>Lunes a Sábado de 11:00 a 20:00 hrs</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p class="contact-info">+56 9 7882 9942</p>
+                    <a href="https://wa.me/56978829942?text=¡Hola!%20Vi%20tu%20página%20de%20Likey%20Store%20y%20me%20interesan%20tus%20trajes%20de%20Spider-Man" 
+                       target="_blank" 
+                       class="whatsapp-link">
+                       <i class="fab fa-whatsapp"></i> Enviar mensaje
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p class="contact-info">@likey_store_</p>
+                    <p>Síguenos y contáctanos por DM</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/likey_store_/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Ventas</h3>
+                    <p class="contact-info">Solo por Starken</p>
+                    <p>Realizamos envíos a todo Chile</p>
+                </div>
+            </div>
         </div>
-        <div class="contact-grid">
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <h3>Teléfono</h3>
-                <p class="contact-info">+56 9 7882 9942</p>
-                <p>Lunes a Sábado de 11:00 a 20:00 hrs</p>
-            </div>
-            
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <h3>WhatsApp</h3>
-                <p class="contact-info">+56 9 7882 9942</p>
-                <a href="https://wa.me/56978829942?text=¡Hola!%20Vi%20tu%20página%20de%20Likey%20Store%20y%20me%20interesan%20tus%20trajes%20de%20Spider-Man" 
-                   target="_blank" 
-                   class="whatsapp-link">
-                   <i class="fab fa-whatsapp"></i> Enviar mensaje
-                </a>
-            </div>
-            
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <h3>Instagram</h3>
-                <p class="contact-info">@likey_store_</p>
-                <p>Síguenos y contáctanos por DM</p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/likey_store_/"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fas fa-truck"></i>
-                </div>
-                <h3>Ventas</h3>
-                <p class="contact-info">Solo por Starken</p>
-                <p>Realizamos envíos a todo Chile</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Botón flotante de WhatsApp -->
-<a href="https://wa.me/56978829942?text=¡Hola!%20Vi%20tu%20página%20de%20Likey%20Store%20y%20me%20interesan%20tus%20trajes%20de%20Spider-Man" 
-   target="_blank" 
-   class="whatsapp-float">
-   <i class="fab fa-whatsapp"></i>
-</a>
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/56978829942?text=¡Hola!%20Vi%20tu%20página%20de%20Likey%20Store%20y%20me%20interesan%20tus%20trajes%20de%20Spider-Man" 
+       target="_blank" 
+       class="whatsapp-float">
+       <i class="fab fa-whatsapp"></i>
+    </a>
 
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-logo">Likey Store</div>
-            <div class="footer-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#productos">Trajes</a>
-                <a href="#contacto">Contacto</a>
-            </div>
-            <div class="copyright">
-                &copy; 2023 Likey Store - Todos los derechos reservados
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Likey Store</div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#productos">Trajes</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2023 Likey Store - Todos los derechos reservados
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
-
-
